@@ -1,0 +1,119 @@
+{
+  "address": "Denver, CO, USA",
+  "current_weather": {
+    "time": 1564267379,
+    "summary": "Mostly Cloudy",
+    "icon": "partly-cloudy-day",
+    "precipProbability": 0.19,
+    "precipType": "rain",
+    "temperature": 84.67,
+    "apparentTemperature": 84.67,
+    "humidity": 0.32,
+    "uvIndex": 3,
+    "visibility": 3.664
+  },
+  "daily_forecast": {
+    "data": [
+      {
+        "time": 1564207200,
+        "icon": "rain",
+        "precipProbability": 0.45,
+        "precipType": "rain",
+        "temperatureHigh": 87.48,
+        "temperatureLow": 68.5
+      },
+      {
+        "time": 1564293600,
+        "icon": "rain",
+        "precipProbability": 0.45,
+        "precipType": "rain",
+        "temperatureHigh": 87.48,
+        "temperatureLow": 68.5
+      },
+      {
+        "time": 1564380000,
+        "icon": "rain",
+        "precipProbability": 0.45,
+        "precipType": "rain",
+        "temperatureHigh": 87.48,
+        "temperatureLow": 68.5
+      },
+      {
+        "time": 1564466400,
+        "icon": "rain",
+        "precipProbability": 0.45,
+        "precipType": "rain",
+        "temperatureHigh": 87.48,
+        "temperatureLow": 68.5
+      },
+      {
+        "time": 1564552800,
+        "icon": "rain",
+        "precipProbability": 0.45,
+        "precipType": "rain",
+        "temperatureHigh": 87.48,
+        "temperatureLow": 68.5
+      },
+      {
+        "time": 1564639200,
+        "icon": "rain",
+        "precipProbability": 0.45,
+        "precipType": "rain",
+        "temperatureHigh": 87.48,
+        "temperatureLow": 68.5
+      }
+    ]
+  },
+  "hourly_forecast": {
+    "data": [
+      {
+        "time": 1564264800,
+        "summary": "Mostly Cloudy",
+        "icon": "partly-cloudy-day",
+        "temperature": 86.68
+      },
+      {
+        "time": 1564268400,
+        "summary": "Mostly Cloudy",
+        "icon": "partly-cloudy-day",
+        "temperature": 86.68
+      },
+      {
+        "time": 1564272000,
+        "summary": "Mostly Cloudy",
+        "icon": "partly-cloudy-day",
+        "temperature": 86.68
+      },
+      {
+        "time": 1564275600,
+        "summary": "Mostly Cloudy",
+        "icon": "partly-cloudy-day",
+        "temperature": 86.68
+      },
+      {
+        "time": 1564279200,
+        "summary": "Mostly Cloudy",
+        "icon": "partly-cloudy-day",
+        "temperature": 86.68
+      },
+      {
+        "time": 1564282800,
+        "summary": "Mostly Cloudy",
+        "icon": "partly-cloudy-day",
+        "temperature": 86.68
+      },
+      {
+        "time": 1564286400,
+        "summary": "Mostly Cloudy",
+        "icon": "partly-cloudy-day",
+        "temperature": 86.68
+      },
+      {
+        "time": 1564290000,
+        "summary": "Mostly Cloudy",
+        "icon": "partly-cloudy-day",
+        "temperature": 86.68
+      }
+    ]
+  }
+}

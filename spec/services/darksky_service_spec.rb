@@ -27,7 +27,7 @@ RSpec.describe DarkskyService do
     expect(todays_weather[:temperatureLow]).to be_kind_of(Float)
     expect(todays_weather[:summary]).to be_kind_of(String)
     expect(todays_weather[:icon]).to be_kind_of(String)
-    expect(todays_weather[:precipIntensityMax]).to be_kind_of(Float)
+    expect(todays_weather[:precipProbability]).to be_kind_of(Float)
     expect(todays_weather[:precipType]).to be_kind_of(String)
 
     daily_weather = response[:daily][:data]
