@@ -5,7 +5,8 @@ class DarkskyService
 
   def get_forecast(lat_lng)
     path = "forecast/#{@api_key}/#{lat_lng}"
-    get_json(path)
+    params = { exclude: 'minutely,alerts,flags' }
+    get_json(path, params)
   end
 
   private
