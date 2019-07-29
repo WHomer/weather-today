@@ -18,11 +18,11 @@ RSpec.describe 'munchies controller' do
       expect(data[:restaurants].count).to  eq(3)
       expect(data[:destination_city]).to be_kind_of(String)
       expect(data[:restaurants][0][:name]).to be_kind_of(String)
-      expect(data[:address][0][:name]).to be_kind_of(String)
+      expect(data[:restaurants][0][:address]).to be_kind_of(String)
       expect(data[:restaurants][1][:name]).to be_kind_of(String)
-      expect(data[:address][1][:name]).to be_kind_of(String)
+      expect(data[:restaurants][1][:address]).to be_kind_of(String)
       expect(data[:restaurants][2][:name]).to be_kind_of(String)
-      expect(data[:address][2][:name]).to be_kind_of(String)
+      expect(data[:restaurants][2][:address]).to be_kind_of(String)
       # {
       #   destination_city: 'Pueblo'
       #   restaurants: [
