@@ -25,7 +25,7 @@ class GoogleService
   end
 
   def conn
-    Faraday.new("https://maps.googleapis.com/maps/api/") do |f|
+    @conn ||= Faraday.new("https://maps.googleapis.com/maps/api/") do |f|
       f.params['key'] = ENV['GOOGLE_API_GEOLOCATION']
       f.adapter Faraday.default_adapter
     end
