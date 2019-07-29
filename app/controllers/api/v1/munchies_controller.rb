@@ -9,20 +9,9 @@ class Api::V1::MunchiesController < ApplicationController
 
     yelp = YelpService.new()
     arrival_time = (Time.now + time_in_seconds.seconds).to_i 
-    response = yelp.get_restaurants(end_location, arrival_time, category)
-
-    restaurants = response[:businesses].map do |business|
-      {
-        name: business[:name],
-        address: business[:location][:display_address].to_s
-      }
-    end
-    results = {
-      destination_city: response[:businesses][0][:location][:city],
-      restaurants: restaurants
-    }
+    yelp_response = yelp.get_restaurants(end_location, arrival_time, category)
 
 
-    render json: results
+    render json: MunchieSerializer.new(yelp_response).munchies
   end
 end

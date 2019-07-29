@@ -23,23 +23,6 @@ RSpec.describe 'munchies controller' do
       expect(data[:restaurants][1][:address]).to be_kind_of(String)
       expect(data[:restaurants][2][:name]).to be_kind_of(String)
       expect(data[:restaurants][2][:address]).to be_kind_of(String)
-      # {
-      #   destination_city: 'Pueblo'
-      #   restaurants: [
-      #     {
-      #       name: 'Restaurant #1'
-      #       address: 'some street, somewhere, co'
-      #     },
-      #     {
-      #       name: 'Restaurant #1'
-      #       address: 'some street, somewhere, co'
-      #     },
-      #     {
-      #       name: 'Restaurant #1'
-      #       address: 'some street, somewhere, co'
-      #     },
-      #   ]
-      # }
     end
   end
 end
