@@ -8,6 +8,15 @@ class GoogleService
     get_json('geocode/json', params)
   end
 
+  def get_travel_time(start_loc, end_loc)
+    params = {
+      origin: start_loc,
+      destination: end_loc,
+      travelMode: 'DRIVING'
+    }
+    get_json('directions/json', params)
+  end
+
   private
 
   def get_json(path, params)

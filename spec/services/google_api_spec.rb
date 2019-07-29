@@ -20,4 +20,13 @@ RSpec.describe GoogleService do
     expect(response_location[:lng]).to a_value_between(-180, 180)
   end
 
+  it '.get_travel_time' do
+    start_loc = 'Denver, CO'
+    end_loc = 'Pueblo, CO'
+    response = @google_service.get_travel_time(start_loc, end_loc)
+    expect(response).to be_an(Hash)
+    time_in_seconds = response[:routes][0][:legs][0][:duration][:value]
+    expect(time_in_seconds).to be_kind_of(Integer)
+  end
+
 end
