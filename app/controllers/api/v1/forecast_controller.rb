@@ -6,7 +6,7 @@ class Api::V1::ForecastController < ApplicationController
   private
 
   def forecast_data(location)
-    geolocation = GoogleGeolocationService.new.get_geocode(location)
+    geolocation = GoogleService.new.get_geocode(location)
     lat_lng_string = geolocation[:results][0][:geometry][:location].values.join(',')
     forecast = DarkskyService.new.get_forecast(lat_lng_string)
 

@@ -1,4 +1,4 @@
-class GoogleGeolocationService
+class GoogleService
   def initialize()
 
   end
