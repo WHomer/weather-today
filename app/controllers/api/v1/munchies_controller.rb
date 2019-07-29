@@ -6,6 +6,7 @@ class Api::V1::MunchiesController < ApplicationController
     response = google.get_travel_time(start_location, end_location)
     time_in_seconds = response[:routes][0][:legs][0][:duration][:value]
 
+    
     require 'pry'; binding.pry
     render json: {}
   end
