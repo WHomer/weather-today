@@ -12,7 +12,6 @@ RSpec.describe 'backgrounds controller' do
 
     it 'should return JSON of background images by city' do
       data = JSON.parse(response.body, symbolize_names: true)
-      require 'pry'; binding.pry
       expect(data).to be_an(Hash)
     end
   end
