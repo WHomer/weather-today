@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Serializer for ImageURL Serializer
 class ImageUrlSerializer
   attr_reader :url, :alt_text
 
@@ -14,8 +17,9 @@ class ImageUrlSerializer
   end
 
   private
-  
+
   def generate_url(data)
-    "https://farm#{ data[:farm] }.staticflickr.com/#{ data[:server] }/#{ data[:id] }_#{ data[:secret] }.jpg"
+    "https://farm#{data[:farm]}.staticflickr.com/ \
+      #{data[:server]}/#{data[:id]}_#{data[:secret]}.jpg"
   end
 end

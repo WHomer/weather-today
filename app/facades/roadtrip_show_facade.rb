@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Roadtrip Show Facade
 class RoadtripShowFacade
   attr_reader :start_location,
               :end_location,
@@ -16,7 +19,7 @@ class RoadtripShowFacade
 
   def end_location_forecast
     hourly_data = forecast_information[:hourly][:data]
-    @result ||= hourly_data.min_by do |hour|
+    @end_location_forecast ||= hourly_data.min_by do |hour|
       (hour[:time] - (Time.now + @travel_time_in_seconds.seconds).to_i).abs
     end
   end
@@ -29,18 +32,17 @@ class RoadtripShowFacade
   end
 
   def travel_inforamtion
-    @get_travel_time ||= GoogleService.new
-      .get_travel_time(@start_location, @end_location)
+    @travel_inforamtion ||= GoogleService.new
+                                         .get_travel_time(@start_location, @end_location)
   end
 
   def forecast_information
-    @get_forecast ||= DarkskyService.new
-      .get_forecast(end_location_lat_lng)
+    @forecast_information ||= DarkskyService.new
+                                            .get_forecast(end_location_lat_lng)
   end
 
   def end_location_lat_lng
     # results are back in String ex'75.000,-32.000'
     travel_inforamtion[:routes][0][:legs][0][:end_location].values.join(',')
   end
-
 end

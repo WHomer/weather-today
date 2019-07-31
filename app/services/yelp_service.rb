@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
+# API service for Yelp
 class YelpService
-  def initialize()
-  end
+  def initialize; end
 
   def get_restaurants(location, open_at, categories)
     params = {
@@ -20,9 +22,9 @@ class YelpService
   end
 
   def conn
-    Faraday.new("https://api.yelp.com/v3") do |f|
+    Faraday.new('https://api.yelp.com/v3') do |f|
       f.headers['Authorization'] = "Bearer #{ENV['YELP_API_KEY']}"
-      f.adapter Faraday.default_adapter 
+      f.adapter Faraday.default_adapter
     end
   end
 end

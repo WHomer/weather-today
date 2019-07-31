@@ -1,0 +1,25 @@
+AllCops:
+  TargetRubyVersion: 2.4.1
+  Exclude:
+    - 'db/**/*.rb'
+    - 'db/schema.rb'
+    - 'db/seeds.rb'
+    - 'node_modules/**/*'
+    - 'bin/*'
+    - 'spec/*'
+    - 'spec/**/*_spec.rb'
+    - 'config/**/*'
+    - 'Gemfile'
+    - 'Rakefile'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/routes.rb'
+    - 'config/environments/development.rb'
+    - 'lib/tasks/*.rake'
+
+Metrics/LineLength:
+  Max: 180
+  Exclude:
+    - 'spec/**/*_spec.rb'
+    - 'lib/tasks/*.rake'

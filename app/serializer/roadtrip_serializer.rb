@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Serializer for Roadtrip Serializer
 class RoadtripSerializer
   def initialize(facade)
     @roadtrip_facade = facade

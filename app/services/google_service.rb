@@ -1,7 +1,8 @@
-class GoogleService
-  def initialize()
+# frozen_string_literal: true
 
-  end
+# API service for Google
+class GoogleService
+  def initialize; end
 
   def get_geocode(location)
     params = { address: location }
@@ -25,7 +26,7 @@ class GoogleService
   end
 
   def conn
-    @conn ||= Faraday.new("https://maps.googleapis.com/maps/api/") do |f|
+    @conn ||= Faraday.new('https://maps.googleapis.com/maps/api/') do |f|
       f.params['key'] = ENV['GOOGLE_API_GEOLOCATION']
       f.adapter Faraday.default_adapter
     end

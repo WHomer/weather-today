@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Serializer for Munchie Serializer
 class MunchieSerializer
   def initialize(restaurants)
     @restaurants = restaurants
