@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'users controller' do
+RSpec.describe 'users controller', :vcr do
   describe 'create', :type => :request do
     before :each do
       @user_1 = User.create!(email: 'whatever@example.com',
@@ -19,13 +19,13 @@ RSpec.describe 'users controller' do
       @body = JSON.parse(request.body.string, symbolize_names: true)
     end
 
-    it 'has an variables' do
+    it 'has variables' do
       expect(@body[:origin]).to eq('Denver,CO')
       expect(@body[:destination]).to eq('Pueblo,CO')
       expect(@body[:api_key]).to eq(@user_1.api_key)
     end
 
-    it 'returns an temp, summary, travel_time key' do
+    it 'returns temp, summary, travel_time key' do
       expect(JSON.parse(response.body)).to have_key('temperature')
       expect(JSON.parse(response.body)['temperature']).to be_kind_of(Float)
       expect(JSON.parse(response.body)).to have_key('summary')
