@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
+# API service for Darksky
 class DarkskyService
-  def initialize()
+  def initialize
     @api_key = ENV['DARKSKY_API_KEY']
   end
 
@@ -17,6 +20,6 @@ class DarkskyService
   end
 
   def conn
-    Faraday.new("https://api.darksky.net/")
+    Faraday.new('https://api.darksky.net/')
   end
 end

@@ -1,16 +1,23 @@
-class Api::V1::ForecastController < ApplicationController
-  def show
-    render json: forecast_data(params[:location])
-  end
+# frozen_string_literal: true
 
-  private
+module Api
+  module V1
+    # Forecast Controller
+    class ForecastController < ApplicationController
+      def show
+        render json: forecast_data(params[:location])
+      end
 
-  def forecast_data(location)
-    geolocation = GoogleService.new.get_geocode(location)
-    lat_lng_string = geolocation[:results][0][:geometry][:location].values.join(',')
-    forecast = DarkskyService.new.get_forecast(lat_lng_string)
+      private
 
-    forecast_serializer = ForecastSerializer.new(geolocation, forecast)
-    forecast_serializer.get_forecast
+      def forecast_data(location)
+        geolocation = GoogleService.new.get_geocode(location)
+        lat_lng_string = geolocation[:results][0][:geometry][:location].values.join(',')
+        forecast = DarkskyService.new.get_forecast(lat_lng_string)
+
+        forecast_serializer = ForecastSerializer.new(geolocation, forecast)
+        forecast_serializer.forecast
+      end
+    end
   end
 end
