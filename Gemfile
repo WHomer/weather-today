@@ -43,6 +43,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.8.2'
   gem 'pry'
   gem 'shoulda-matchers'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do
