@@ -1,6 +1,10 @@
 class Forecast
-  def initialize(data)
+  attr_reader :id, :address
+
+  def initialize(data, address)
+    @address = address
     @data = data
+    @id = nil
   end
 
   def current_weather

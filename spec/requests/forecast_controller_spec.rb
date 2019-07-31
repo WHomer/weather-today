@@ -10,7 +10,7 @@ RSpec.describe 'forecast controller', :vcr do
     end
 
     it 'should return JSON of weather by city' do
-      data = JSON.parse(response.body, symbolize_names: true)
+      data = JSON.parse(response.body, symbolize_names: true)[:data][:attributes]
 
       expect(data).to be_an(Hash)
       expect(data[:address]).to eq('Denver, CO, USA')
@@ -28,8 +28,8 @@ RSpec.describe 'forecast controller', :vcr do
       expect(current_weather).to have_key(:visibility)
       # expect(current_weather[:visibility]).to be_kind_of(Float)
 
-      daily_forecast = data[:daily_forecast][:data][0]
-      expect(data[:daily_forecast][:data].length > 4).to eq(true)
+      daily_forecast = data[:daily_weather][0]
+      expect(data[:daily_weather].length > 4).to eq(true)
       expect(daily_forecast[:time]).to be_kind_of(Integer)
       expect(daily_forecast[:icon]).to be_kind_of(String)
       expect(daily_forecast).to include(:precipProbability)
@@ -37,8 +37,8 @@ RSpec.describe 'forecast controller', :vcr do
       expect(daily_forecast[:temperatureHigh]).to be_kind_of(Float)
       expect(daily_forecast[:temperatureLow]).to be_kind_of(Float)
 
-      hourly_forcast = data[:hourly_forecast][:data][0]
-      expect(data[:hourly_forecast][:data].length > 7).to eq(true)
+      hourly_forcast = data[:hourly_weather][0]
+      expect(data[:hourly_weather].length > 7).to eq(true)
       expect(hourly_forcast[:time]).to be_kind_of(Integer)
       expect(hourly_forcast[:summary]).to be_kind_of(String)
       expect(hourly_forcast[:icon]).to be_kind_of(String)

@@ -8,13 +8,11 @@ class ForecastShowFacade
 
   def initialize(params)
     @location = params[:location]
-    @formatted_address = geolocation.formated_address
-    @current_weather = forecast.current_weather
-    @daily_weather = forecast.daily_weather
-    @hourly_weather = forecast.hourly_weather
+    # @formatted_address = geolocation.formated_address
+    # @current_weather = forecast.current_weather
+    # @daily_weather = forecast.daily_weather
+    # @hourly_weather = forecast.hourly_weather
   end
-
-  private
 
   def forecast_api_data
     lat_lng_string = geolocation.lat_lng.values.join(',')
@@ -22,7 +20,8 @@ class ForecastShowFacade
   end
 
   def forecast
-    @forecast ||= Forecast.new(forecast_api_data)
+    address = geolocation.formated_address
+    @forecast ||= Forecast.new(forecast_api_data, address)
   end
 
   def geocode_api_data

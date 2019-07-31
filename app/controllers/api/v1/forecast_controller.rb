@@ -6,7 +6,7 @@ module Api
     class ForecastController < ApplicationController
       def show
         facade = ForecastShowFacade.new(params)
-        render json: ForecastSerializer.new(facade).forecast
+        render json: ForecastSerializer.new(facade.forecast)
       end
     end
   end
