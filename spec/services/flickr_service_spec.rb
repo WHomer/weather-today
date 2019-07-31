@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe FlickrService do
+RSpec.describe FlickrService, :vcr do
   before :each do
     @flickr_service = FlickrService.new()
   end

@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.flickr.com/services/rest/?api_key=<FLICKER_API_KEY>&format=json&method=flickr.photos.search&nojsoncallback=1&text=denver,co%20skyline%20downtown
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 31 Jul 2019 01:43:54 GMT
+      Server:
+      - Apache/2.4.39 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 6d9f09528e589f3fa7ca05f965ea37a2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - "-eI4ROqcNYcRoU7DnyduARLsmfXr5BQFiSCxYST-upiO3quNAVA_ag=="
+    body:
+      encoding: UTF-8
+      string: '{"photos":{"page":1,"pages":1,"perpage":100,"total":"89","photo":[{"id":"33823599548","owner":"35390579@N04","secret":"eee1c4fc2a","server":"65535","farm":66,"title":"Day115_2019","ispublic":1,"isfriend":0,"isfamily":0},{"id":"42271115360","owner":"66898813@N06","secret":"3b3d1dd71a","server":"1837","farm":2,"title":"Denver,
+        CO | 20189.08.16 | Denver Skyline","ispublic":1,"isfriend":0,"isfamily":0},{"id":"43691964192","owner":"8121206@N07","secret":"4ff507454d","server":"930","farm":1,"title":"Denver
+        Skyline","ispublic":1,"isfriend":0,"isfamily":0},{"id":"39906801434","owner":"75688338@N00","secret":"9732467d50","server":"4786","farm":5,"title":"03.03.18","ispublic":1,"isfriend":0,"isfamily":0},{"id":"40507202451","owner":"25273938@N03","secret":"25e1738b89","server":"4604","farm":5,"title":"The
+        Denver Skyline","ispublic":1,"isfriend":0,"isfamily":0},{"id":"37466428181","owner":"91387508@N06","secret":"73d168deb9","server":"4448","farm":5,"title":"Denver
+        Art Museum at Night","ispublic":1,"isfriend":0,"isfamily":0},{"id":"34436041506","owner":"91387508@N06","secret":"402f82655f","server":"4164","farm":5,"title":"Denver
+        Skyline at Night 2017","ispublic":1,"isfriend":0,"isfamily":0},{"id":"32878705161","owner":"23742495@N07","secret":"a6e86a7295","server":"2712","farm":3,"title":"Speer
+        BLVD HDR","ispublic":1,"isfriend":0,"isfamily":0},{"id":"25200565159","owner":"53065168@N03","secret":"53a69104e4","server":"1472","farm":2,"title":"Adams-Mark
+        Hotel Downtown---Denver, Co.","ispublic":1,"isfriend":0,"isfamily":0},{"id":"21109250781","owner":"44173198@N07","secret":"6211290774","server":"5654","farm":6,"title":"#Repost
+        @cityofdenver with @repostapp. \u30fb\u30fb\u30fb Downtown #DenverCo #Colorado
+        #milehighcity \ud83d\udcf7: @jake_blackson","ispublic":1,"isfriend":0,"isfamily":0},{"id":"16532910359","owner":"88913562@N00","secret":"33a5bbc471","server":"8669","farm":9,"title":"The
+        view from the CEO''s window","ispublic":1,"isfriend":0,"isfamily":0},{"id":"16197088425","owner":"37033392@N06","secret":"b810aa49d9","server":"8585","farm":9,"title":"Theater
+        District","ispublic":1,"isfriend":0,"isfamily":0},{"id":"15767992161","owner":"127908438@N06","secret":"ea2998ae79","server":"7514","farm":8,"title":"Denver
+        at Night","ispublic":1,"isfriend":0,"isfamily":0},{"id":"15443357840","owner":"57267220@N08","secret":"4d118d75c7","server":"3951","farm":4,"title":"Orange
+        Crush","ispublic":1,"isfriend":0,"isfamily":0},{"id":"12025569276","owner":"74644590@N08","secret":"3d8fb93943","server":"7385","farm":8,"title":"Denver
+        City and County Building Lights","ispublic":1,"isfriend":0,"isfamily":0},{"id":"12025013663","owner":"74644590@N08","secret":"a196fec67c","server":"7382","farm":8,"title":"Denver
+        City Skyline","ispublic":1,"isfriend":0,"isfamily":0},{"id":"8168105255","owner":"93174672@N00","secret":"4923146821","server":"7253","farm":8,"title":"JONAS
+        BROTHERS FURS BUILDING-1037 BROADWAY","ispublic":1,"isfriend":0,"isfamily":0},{"id":"8159002437","owner":"93174672@N00","secret":"55d9eb0fce","server":"8198","farm":9,"title":"LITTLETON
+        CREAMERY\/BEATRICE FOODS COLD STORAGE WAREHOUSE-1801 Wynkoop","ispublic":1,"isfriend":0,"isfamily":0},{"id":"8117429947","owner":"9607676@N05","secret":"07f1bf8fbd","server":"8049","farm":9,"title":"Denver
+        Skyline","ispublic":1,"isfriend":0,"isfamily":0},{"id":"8111022990","owner":"93174672@N00","secret":"0272c2442b","server":"8050","farm":9,"title":"MONTVIEW
+        BOULEVARD PRESBYTERIAN CHURCH-1980 DAHLIA STREET","ispublic":1,"isfriend":0,"isfamily":0},{"id":"8098982168","owner":"93174672@N00","secret":"c40165e242","server":"8468","farm":9,"title":"LITTLETON
+        CREAMERY\/BEATRICE FOODS COLD STORAGE WAREHOUSE-1801 Wynkoop","ispublic":1,"isfriend":0,"isfamily":0},{"id":"8094352654","owner":"93174672@N00","secret":"e4a1658626","server":"8044","farm":9,"title":"P1030990","ispublic":1,"isfriend":0,"isfamily":0},{"id":"8081673969","owner":"93174672@N00","secret":"73c6e575e6","server":"8191","farm":9,"title":"IDEAL
+        BUILDING-821 17th Street","ispublic":1,"isfriend":0,"isfamily":0},{"id":"8079030699","owner":"93174672@N00","secret":"e97c0fe42c","server":"8053","farm":9,"title":"DSCN1456","ispublic":1,"isfriend":0,"isfamily":0},{"id":"8076168485","owner":"93174672@N00","secret":"8674d04546","server":"8043","farm":9,"title":"BUERGER
+        BROTHERS BUILDING AND ANNEX-1732-1740 and 1742 Champa Street","ispublic":1,"isfriend":0,"isfamily":0},{"id":"8075049895","owner":"93174672@N00","secret":"00b51aa2e8","server":"7252","farm":8,"title":"A.C.
+        FOSTER BUILDING\/UNIVERSITY BUILDING-912 16th Street","ispublic":1,"isfriend":0,"isfamily":0},{"id":"8074292809","owner":"93174672@N00","secret":"7cdf71e29b","server":"8033","farm":9,"title":"KISTLER
+        STATIONERY BUILDING-1636 Champa Street","ispublic":1,"isfriend":0,"isfamily":0},{"id":"7980501460","owner":"93174672@N00","secret":"49d21cf240","server":"8445","farm":9,"title":"DENVER
+        DRY GOODS COMPANY BUILDING-16th & California Streets","ispublic":1,"isfriend":0,"isfamily":0},{"id":"7804854862","owner":"93174672@N00","secret":"7bcc05503d","server":"7132","farm":8,"title":"DENVER
+        PUBLIC LIBRARY-10 West 14th Avenue Parkway","ispublic":1,"isfriend":0,"isfamily":0},{"id":"7779996790","owner":"93174672@N00","secret":"8d4446fd17","server":"7109","farm":8,"title":"TIVOLI
+        BREWERY COMPANY-1320-1348 10th Street","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6830362977","owner":"45206671@N00","secret":"42b79fdd16","server":"7152","farm":8,"title":"Downtown
+        Denver from the Central Library","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6118932517","owner":"97355281@N00","secret":"530bb77fbc","server":"6082","farm":7,"title":"Downtown
+        Denver","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6118931773","owner":"97355281@N00","secret":"651b2b158a","server":"6090","farm":7,"title":"Downtown
+        Denver","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6118930259","owner":"97355281@N00","secret":"4bab29b68a","server":"6199","farm":7,"title":"Downtown
+        Denver","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6118915567","owner":"97355281@N00","secret":"6534b297d5","server":"6074","farm":7,"title":"Downtown
+        Denver","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6119458460","owner":"97355281@N00","secret":"3a6a066cd0","server":"6192","farm":7,"title":"Downtown
+        Denver","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6119430444","owner":"97355281@N00","secret":"9c6b6bce55","server":"6083","farm":7,"title":"Downtown
+        Denver","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6118878147","owner":"97355281@N00","secret":"0e9286a4ce","server":"6075","farm":7,"title":"Downtown
+        Denver","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6119418954","owner":"97355281@N00","secret":"3a34389c18","server":"6210","farm":7,"title":"Downtown
+        Denver","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6119416502","owner":"97355281@N00","secret":"d4f01fe861","server":"6069","farm":7,"title":"Denver
+        City Cable Railway","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6118857837","owner":"97355281@N00","secret":"401ba7c33f","server":"6077","farm":7,"title":"Downtown
+        Denver","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6118852857","owner":"97355281@N00","secret":"59a1f3396d","server":"6071","farm":7,"title":"Downtown
+        Denver","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6118852635","owner":"97355281@N00","secret":"983b7658f8","server":"6197","farm":7,"title":"Downtown
+        Denver","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6098335109","owner":"23742495@N07","secret":"b80d10abb0","server":"6203","farm":7,"title":"Pro
+        Cycle Skyline","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5981287281","owner":"64701065@N08","secret":"847017d8ef","server":"6028","farm":7,"title":"Downtown
+        Denver skyline","ispublic":1,"isfriend":0,"isfamily":0},{"id":"5285580703","owner":"29861761@N08","secret":"8d3d990854","server":"5046","farm":6,"title":"Downtown
+        Denver","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4797282267","owner":"75081971@N00","secret":"88f0d9ab88","server":"4138","farm":5,"title":"2010
+        Clocktower 157","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4401650862","owner":"75081971@N00","secret":"215b06d40a","server":"4009","farm":5,"title":"Denver
+        Skyline","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4133818861","owner":"93174672@N00","secret":"3671557c8e","server":"2571","farm":3,"title":"Beautiful
+        Fish Scales on Dutch Colonial Revival","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4075486279","owner":"38649870@N03","secret":"fc86bc97f7","server":"2782","farm":3,"title":"7206_Skyline","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4075407755","owner":"38649870@N03","secret":"884344da2d","server":"3087","farm":4,"title":"7785_Civic_Park","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4076159556","owner":"38649870@N03","secret":"fc62d06d33","server":"2784","farm":3,"title":"7344_Capitol_PM","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4075270033","owner":"38649870@N03","secret":"bffd2ebeb0","server":"2776","farm":3,"title":"6353_Millennium","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4075269893","owner":"38649870@N03","secret":"a3ec4547b2","server":"2627","farm":3,"title":"6930_Skyline","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4075030829","owner":"38649870@N03","secret":"609c2feee8","server":"2508","farm":3,"title":"4906_Botanic","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4075640910","owner":"38649870@N03","secret":"f537738dbd","server":"2570","farm":3,"title":"2114_Auraria","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4074885115","owner":"38649870@N03","secret":"a86555b89e","server":"2631","farm":3,"title":"3081_Firefighter","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4075540126","owner":"38649870@N03","secret":"ff2beba0df","server":"2529","farm":3,"title":"8029_Golf_Course","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4073720800","owner":"38649870@N03","secret":"6899ae3ec6","server":"2773","farm":3,"title":"0118_Biker","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4073720710","owner":"38649870@N03","secret":"bbe9cdbc37","server":"2752","farm":3,"title":"0049_family","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4073720336","owner":"38649870@N03","secret":"8e72cffd70","server":"2629","farm":3,"title":"0614_Mall_Walk","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4073720222","owner":"38649870@N03","secret":"c07852bf0e","server":"2428","farm":3,"title":"0867_Ice_House","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4073719920","owner":"38649870@N03","secret":"8c99ae029c","server":"2716","farm":3,"title":"1307_Dog_Walk","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4072585400","owner":"38649870@N03","secret":"c958816ac2","server":"2719","farm":3,"title":"0848_Architecture","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4034474207","owner":"38649870@N03","secret":"891eb7cbef","server":"2572","farm":3,"title":"9505_Breck","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4035146760","owner":"38649870@N03","secret":"b89eefc071","server":"2787","farm":3,"title":"7990_Skyline","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4032716406","owner":"38649870@N03","secret":"578b05070c","server":"2504","farm":3,"title":"5500_Firetruck","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4032620002","owner":"38649870@N03","secret":"f558b92020","server":"2441","farm":3,"title":"4184_Mint","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4032619646","owner":"38649870@N03","secret":"cf22b7faee","server":"2594","farm":3,"title":"3677_PG&E","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4031808725","owner":"38649870@N03","secret":"734283fc02","server":"2778","farm":3,"title":"3182_Dancers","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4030575666","owner":"38649870@N03","secret":"fa36285262","server":"2479","farm":3,"title":"0979_Tabor","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4029820033","owner":"38649870@N03","secret":"599d66b0aa","server":"3509","farm":4,"title":"0734_DPAC","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4006733589","owner":"91357526@N00","secret":"b135333c78","server":"2572","farm":3,"title":"Skyline
+        & Sunset, Denver, 18 Aug 2009","ispublic":1,"isfriend":0,"isfamily":0},{"id":"4000731252","owner":"38649870@N03","secret":"ce6bb9e764","server":"2451","farm":3,"title":"4973_Golfer","ispublic":1,"isfriend":0,"isfamily":0},{"id":"3999957265","owner":"38649870@N03","secret":"bddd5d43ee","server":"2521","farm":3,"title":"9989_wake","ispublic":1,"isfriend":0,"isfamily":0},{"id":"3999089962","owner":"38649870@N03","secret":"9a2f576351","server":"3441","farm":4,"title":"1405_Skatebd","ispublic":1,"isfriend":0,"isfamily":0},{"id":"3886905442","owner":"93174672@N00","secret":"e2b7efc8f9","server":"2430","farm":3,"title":"The
+        Lafayette Apartment Building","ispublic":1,"isfriend":0,"isfamily":0},{"id":"3886898840","owner":"93174672@N00","secret":"02742a7649","server":"3489","farm":4,"title":"Grey
+        Dutch Colonial Revival with Bay Window","ispublic":1,"isfriend":0,"isfamily":0},{"id":"3304694548","owner":"93174672@N00","secret":"9a04405794","server":"3396","farm":4,"title":"Dutch
+        Colonial Revival with Contrasting Color Schemes","ispublic":1,"isfriend":0,"isfamily":0},{"id":"3251837599","owner":"93174672@N00","secret":"ce1c1c09b3","server":"3111","farm":4,"title":"DANIELS
+        & FISHER TOWER-1101 16th Street","ispublic":1,"isfriend":0,"isfamily":0},{"id":"2725668918","owner":"93174672@N00","secret":"600539172d","server":"3231","farm":4,"title":"A
+        Dutch Colonial Revival House at Sunset","ispublic":1,"isfriend":0,"isfamily":0},{"id":"2709685195","owner":"29032250@N06","secret":"57de799659","server":"3041","farm":4,"title":"Denver
+        Marriott City Center: Guestroom","ispublic":1,"isfriend":0,"isfamily":0},{"id":"2710497404","owner":"29032250@N06","secret":"1f8b7947e7","server":"3219","farm":4,"title":"Denver
+        Marriott City Center: Exterior","ispublic":1,"isfriend":0,"isfamily":0},{"id":"2605122186","owner":"93174672@N00","secret":"e761261fae","server":"3282","farm":4,"title":"DENVER
+        CITY AND COUNTY BUILDING, DENVER","ispublic":1,"isfriend":0,"isfamily":0},{"id":"1039135120","owner":"93174672@N00","secret":"3e82a19c16","server":"1136","farm":2,"title":"Denver
+        Skyline through the CHEESMAN PARK Pavillion","ispublic":1,"isfriend":0,"isfamily":0},{"id":"564333352","owner":"93174672@N00","secret":"faf2025fcb","server":"1223","farm":2,"title":"TRAMWAY
+        BUILDING (Teatro Hotel)-1100 14th Street","ispublic":1,"isfriend":0,"isfamily":0},{"id":"537177847","owner":"93174672@N00","secret":"d3e68300a6","server":"1284","farm":2,"title":"Golden
+        Dome","ispublic":1,"isfriend":0,"isfamily":0},{"id":"537177821","owner":"93174672@N00","secret":"80e5c8e69e","server":"1015","farm":2,"title":"Denver
+        Colorado State Capitol Building","ispublic":1,"isfriend":0,"isfamily":0}]},"stat":"ok"}'
+    http_version: 
+  recorded_at: Wed, 31 Jul 2019 01:43:53 GMT
+recorded_with: VCR 5.0.0
