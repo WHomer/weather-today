@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'faraday', '~> 0.15.4'
 gem 'figaro', '~> 1.1.1'
+gem 'fast_jsonapi'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
