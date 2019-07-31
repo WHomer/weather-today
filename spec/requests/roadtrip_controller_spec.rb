@@ -38,4 +38,22 @@ RSpec.describe 'users controller', :vcr do
       expect(response).to have_http_status(:success)
     end
   end
+
+  describe 'create sad paths' do
+
+    it 'returns 401 if unautherized api_key' do
+      body = {
+        "origin": "Denver,CO",
+        "destination": "Pueblo,CO",
+        "api_key": 'incorrect_key'
+      }
+      type = {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+      post '/api/v1/road_trip', params: body.to_json, headers: type
+
+      expect(response).to have_http_status(:unauthorized)
+    end
+  end
 end
