@@ -16,6 +16,9 @@ VCR.configure do |config|
   config.before_record do |i|
     i.response.body.force_encoding('UTF-8')
   end
+  config.default_cassette_options = {
+    :match_requests_on => [:method, VCR.request_matchers.uri_without_param(:open_at)]
+  }
   config.filter_sensitive_data('<GOOGLE_API_GEOLOCATION>') { ENV['GOOGLE_API_GEOLOCATION'] }
   config.filter_sensitive_data('<DARKSKY_API_KEY>') { ENV['DARKSKY_API_KEY'] }
   config.filter_sensitive_data('<FLICKER_API_KEY>') { ENV['FLICKER_API_KEY'] }
