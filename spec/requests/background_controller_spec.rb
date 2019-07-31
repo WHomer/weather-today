@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'backgrounds controller' do
+RSpec.describe 'backgrounds controller', :vcr do
   describe 'index' do
     before :each do
       get '/api/v1/backgrounds?location=denver,co'

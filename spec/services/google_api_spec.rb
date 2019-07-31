@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe GoogleService do
+RSpec.describe GoogleService, :vcr do
   before :each do
     @google_service = GoogleService.new()
   end

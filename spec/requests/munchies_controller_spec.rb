@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'munchies controller' do
+RSpec.describe 'munchies controller', :vcr do
   describe 'index' do
     before :each do
       get '/api/v1/munchies?start=denver,co&end=pueblo,co&food=chinese'

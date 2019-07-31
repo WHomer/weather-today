@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe YelpService do
+RSpec.describe YelpService, :vcr do
   before :each do
     @yelp = YelpService.new()
   end

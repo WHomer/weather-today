@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe DarkskyService do
+RSpec.describe DarkskyService, :vcr do
   before :each do
     @darksky_service = DarkskyService.new()
   end

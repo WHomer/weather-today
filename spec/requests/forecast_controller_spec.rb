@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'forecast controller' do
+RSpec.describe 'forecast controller', :vcr do
   describe 'show' do
     before :each do
       get "/api/v1/forecast?location=denver,co"
